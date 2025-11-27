@@ -19,7 +19,7 @@ ConnectDB()
 
     // Enable CORS
     app.use(cors({
-      origin: "http://localhost:3000",
+      origin: "candid-kringle-d5677f.netlify.app",
       methods: ["GET", "POST", "PUT", "DELETE"],
       allowedHeaders: ["Content-Type", "Authorization"],
       credentials: true,
@@ -44,5 +44,6 @@ ConnectDB()
   .catch((error) => {
     console.error("Error connecting to the database:", error);
   });
+
 
 export default app;
